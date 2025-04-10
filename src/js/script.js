@@ -19,3 +19,4 @@ if(qtdEstoque == ""){
     alert("Você precisa inserir a quantidade no estoque!")
     qtdEstoque = parseInt(prompt("Insira a quantidade no estoque"))
 }
+console.log qualquer bosta
