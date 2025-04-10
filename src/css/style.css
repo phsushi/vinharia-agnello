@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #010308;
+    color: #fff;
+    text-align: center;
+    margin-top: 240px;
+    font-size: large;
+}
+
+header{
+    background: #470202;
+    color:#fff;
+    padding: 20px;
+}
