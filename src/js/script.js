@@ -1,4 +1,5 @@
 //Cadastro do vinho
+
 nomeVinho = prompt("Insira o nome do vinho")
 if (nomeVinho == ""){
     alert("Você precisa inserir o nome do vinho!")
@@ -33,3 +34,4 @@ if (qtdEstoque >5){
     console.log("Estoque Baixo")
 }
 console.log(`Nome do Vinho:${nomeVinho}\nSafra do Vinho:${`safraVinho`}\nQuantidade em estoque:${qtdEstoque}`)
+

@@ -1,19 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
-
-body{
-    background: #010308;
-    color: #fff;
-    text-align: center;
-    margin-top: 240px;
-    font-size: large;
+    
 }
 
 header{
-    background: #470202;
+    
+    display: flex;  
+    background: #570000;
     color:#fff;
-    padding: 20px;
+
+    font-family: "The Nautigal", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap:10px;
+}
+header button{
+ background: none;
+ margin-left: 1050px;
+}
+
+body{
+    background-color: rgb(1, 2, 14);
+}
+
+main article{
+    background-color: #570000;
 }
