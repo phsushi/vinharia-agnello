@@ -3,11 +3,13 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    
 }
 
-header{
-    
+body{
+    background-color: rgb(1, 2, 14);
+}
+
+header{   
     display: flex;  
     background: #570000;
     color:#fff;
@@ -24,12 +26,24 @@ header{
 header button{
  background: none;
  margin-left: 1050px;
+ border-style: none;
+ border-radius: 100%;
 }
 
-body{
-    background-color: rgb(1, 2, 14);
-}
-
-main article{
+main #ARTICLES {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 35px;
+  }
+  
+  article {
     background-color: #570000;
-}
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+
+  }
