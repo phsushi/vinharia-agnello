@@ -1,5 +1,5 @@
 # 🍷Vinharia Agnello
-Sistema criado para introduzir o negócio na esfera do mercado virtual, apresentando funcionalidades como: **cadastro de vinhos, análises e etc...**
+Sistema criado para introduzir o negócio na esfera do mercado virtual, apresentando como principal funcionalidade o **cadastro de vinhos**
 
 
 
@@ -13,3 +13,7 @@ Sistema criado para introduzir o negócio na esfera do mercado virtual, apresent
 
 ### 📟Github Pages Link: [Vinharia-Agnello](https://phsushi.github.io/vinharia-agnello/index)
     https://phsushi.github.io/vinharia-agnello/index
+
+<p align="center">
+    <img src="./src/assets/preview.jpeg" alt="Preview">
+</p>

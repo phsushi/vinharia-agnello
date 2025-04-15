@@ -1,37 +1,49 @@
 //Cadastro do vinho
-
 nomeVinho = prompt("Insira o nome do vinho")
-if (nomeVinho == ""){
+if (nomeVinho == "" || nomeVinho == null){
     alert("Você precisa inserir o nome do vinho!")
-    prompt("Insira o nome do vinho")
+    nomeVinho = prompt("Insira o nome do vinho")
 }
+
 tipoVinho = prompt("Insira o tipo")
-if(tipoVinho == ""){
+if(tipoVinho == "" || tipoVinho == null){
     alert("Você precisa inserir o tipo do vinho!")
     tipoVinho = prompt("Insira o tipo")
 }
-safraVinho = parseInt(prompt("Insira a safra (ano)"))
-if(safraVinho == ""){
+
+safraVinhoInput = prompt("Insira a safra (ano)")
+if(safraVinhoInput == "" || safraVinhoInput == null){
     alert("Você precisa inserir a safra do vinho!")
-    safraVinho = parseInt(prompt("Insira a safra (ano)"))
+    safraVinhoInput = prompt("Insira a safra (ano)")
 }
+safraVinho = parseInt(safraVinhoInput)
+
+qtdEstoqueInput = prompt("Insira a quantidade no estoque")
+if(qtdEstoqueInput == "" || qtdEstoqueInput == null){
+    alert("Você precisa inserir a quantidade no estoque!")
+    qtdEstoqueInput = prompt("Insira a quantidade no estoque")
+}
+qtdEstoque = parseInt(qtdEstoqueInput)
+
+//Classificando a safra do vinho
 if (safraVinho >= 2020){
-    console.log("É um vinho jovem")
+    classificacao = "É um vinho jovem"
 }
-else if (safraVinho >=2015 && safraVinho <=2019){
-    console.log("É um vinho amadurecido")
+else if (safraVinho >= 2015 && safraVinho <= 2019){
+    classificacao = "É um vinho amadurecido"
 }
 else{
-    console.log("É um vinho antigo")
+    classificacao = "É um vinho antigo"
 }
-qtdEstoque = parseInt(prompt("Insira a quantidade no estoque"))
-if(qtdEstoque == ""){
-    alert("Você precisa inserir a quantidade no estoque!")
-    qtdEstoque = parseInt(prompt("Insira a quantidade no estoque"))
-}
-if (qtdEstoque >5){
-    alert("Estoque Baixo")
+
+
+//Verificando se a quantidade no estoque está baixa ou não
+if (qtdEstoque < 5){
+    alert("Nova mensagem do sistema disponível, cheque o console para ver.")
     console.log("Estoque Baixo")
 }
-console.log(`Nome do Vinho:${nomeVinho}\nSafra do Vinho:${`safraVinho`}\nQuantidade em estoque:${qtdEstoque}`)
+
+//Exibição de todas as informações do vinho
+alert("Nova mensagem do sistema disponível, cheque o console para ver.")
+console.log(`Nome do Vinho: ${nomeVinho}\nTipo do vinho: ${tipoVinho}\nSafra do Vinho: ${safraVinho}\nClassificação da safra: ${classificacao}\nQuantidade em estoque: ${qtdEstoque}`)
 

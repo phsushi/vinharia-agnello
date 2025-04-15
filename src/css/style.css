@@ -13,21 +13,28 @@ header{
     display: flex;  
     background: #570000;
     color:#fff;
-
     font-family: "The Nautigal", cursive;
     font-weight: 400;
     font-style: normal;
-
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
     gap:10px;
 }
 header button{
- background: none;
- margin-left: 1050px;
- border-style: none;
- border-radius: 100%;
+    background: none;
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    margin-right:10px;
+    border:solid 1px white;
+    border-radius: 100%;
+    box-shadow:2px 2px ;
+    cursor: pointer;
+    transition-duration: 300ms;
+}
+header button:hover{
+    opacity: 70%;
 }
 
 main #ARTICLES {
